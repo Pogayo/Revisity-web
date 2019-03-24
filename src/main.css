@@ -23,14 +23,27 @@ body{
     justify-content: flex-end;
     list-style-type: none;
     width:100%;
-    background-color: black;
+    background-color: #1E2528;
 
 
+}
+#rev{
+    margin-right: auto;
+    color:white;
+    font-weight: bold;
+    font-style: oblique;
+    font-size:22px;
 }
 #header-nav-list>li>a{  /*formating the elements*/
     text-decoration: none;
     color:white;
     font-size: 18px;
+}
+#header-nav-list>li>a:active{
+    color:#CF9812;
+}
+#header-nav-list>li>a:visited{
+    color:#CF9812;
 }
 #header-nav-list>li{  /*formating the list*/
     display: inline;
@@ -44,7 +57,7 @@ body{
 
 }
 #top-section{
-    height:310px;
+    height:350px;
     position:relative;
 }
 #top-section p{
@@ -76,7 +89,7 @@ body{
 #footer{
     margin-top:20px;
     height:20px;
-    background-color: black;
+    background-color: #1E2528;
     color:white;
     padding: 20px 20px;
 }
@@ -112,4 +125,40 @@ h4{
 ul{
     margin-top:0px;
     margin-bottom: 0px;
+}
+#overview-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding-left:40px;
+    padding-right:40px;
+}
+table, th, td {  /*styling the tables in the modules*/
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+}
+table{
+    width:75%;
+    margin-left:50px;
+    margin-top: 20px;
+
+}
+#table-heading{
+    background-color: #F2f2f2;
+    color:#CF9812;
+}
+input{
+    margin-bottom:10px;
+    margin-left:40px;
+}
+.view-button[type=submit]{
+    float: none;
+
+}
+textarea{
+    height:150px;
+    width:300px;
 }
