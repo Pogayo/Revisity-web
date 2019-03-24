@@ -3,8 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Revisity-Home</title>
+    <link href="main.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
+    <nav id="top-nav">
+        <ul id="header-nav-list">
+            <li><a href="">Home</a></li>
+            <li><a href="programming.html">Programming 1</a></li>
+            <li><a href="databases.html">Databases</a></li>
+            <li><a href="mfc.html">MFC</a></li>
+            <li><a href="discrete.html" id="last">Discrete Mathematics</a></li>
+        </ul>
+    </nav>
+    <div id="top-section"> <!--top section-contains an image and the top text-->
+        <img id="top-img" src="../images/code-back.jpg" title="Coding in python" alt="Coding in python">
+        <p>WELCOME TO REVISITY!<br/>FOR ALL THE REVISION MATERIALS YOU NEED <br/>++ MUCH MORE !!</p>
+    </div>
+    <div id="courses"><!-- div for the courses being offered-->
+        <h1 class="center-text" >Courses Covered</h1>
+        <div id="courses-container">
+        <div class="courses-content">
+            <h2>Mathematical Foundations of Computing</h2>
+            <p>Covers mathematical concepts you need to excel in the field of computing.
+                <br/>Has total of 20 topics.
+            <h4>Main sections</h4>
+            <ul><li>Advanced Algebra</li>
+                <li>Calculus 1</li></ul>
+                <br/>Facilitator: Dr Don</p>
+            <button type="button"  class="view-button">View</button> <!-- When this button is clicked, it leads to the respective page-->
+        </div>
+        <div class="courses-content">
+            <h2>Programming 1</h2>
+            <p>Covers introduction to programming using  python programming language.Has total of 4 topics.
+            <h4>Main sections</h4>
+
+            <ul> <li>Conditions</li>
+                <li>Functional programming</li>
+                <li>Object Oriented programming</li></ul>
+                <br/>Facilitator: Mehdi
+            </p>
+            <button type="button"  class="view-button">View</button>
+        </div>
+        <div class="courses-content">
+            <h2>Databases Systems</h2>
+            <p>Introduces database systems. Focuses on the theory behind the systems and SQL.
+              <h4>Main sections</h4>
+            <ul>
+            <li>History of Databases</li>
+                <li>SQL, MySQL</li></ul>
+                <br/>Facilitator: Emelyne
+            </p>
+            <button type="button"  class="view-button">View</button>
+        </div>
+        <div class="courses-content">
+            <h2>Discrete Mathematics</h2>
+            <p>Covers mathematical topics dealing with discrete values.
+            <h4>Main sections</h4>
+            <ul>
+                <li>Counting</li>
+                <li>Graphs and Trees</li>
+                <li> Recursion</li></ul>
+                <br/>Facilitator: Obed
+            </p>
+            <button type="button"  class="view-button">View</button>
+        </div>
+        </div>
+    </div>
+   <div id="footer"><!--footer section--will be the same in all the pages-->
+       <span id="float">&copy Revisity 2019 </span> <span class="right-align"><a style="color:white" href="#top-nav" id="back">Back to top</a></span>
+   </div>
 
 </body>
 </html>
