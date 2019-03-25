@@ -172,10 +172,15 @@ textarea{
 .quiz-form{
     width:70%;
 }
-.quiz-div{
-    border:solid #F2F0Ff;
-    margin-bottom:20px;
+.quiz-div {
+    border: solid #F2F0Ff;
+    margin-bottom: 20px;
     border-radius: 5px;
-    padding:5px;
-
+    padding: 5px;
+}
+.correctAnswer{
+  background-color: rgba(18, 136, 18, 0.14);
+}
+.wrongAnswer{
+  background-color:rgba(153, 18, 52, 0.14);
 }
