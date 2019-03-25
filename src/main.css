@@ -1,15 +1,16 @@
 *{
     font-family: 'Montserrat', sans-serif;
+    box-sizing:border-box;  /*making sure padding and margiins are calculated in the size of an element*/
 }
 body{
-    padding:0px;
-    margin:0px;
+    padding:0;
+    margin:0;
 }
 #top-nav{
-    /*width:100%;*/
+    width:100%;
     position:relative;
     top:0;
-    padding-right: 20px;
+
 
 }
 #header-nav-list{  /*formating the list*/
@@ -153,6 +154,7 @@ table{
 input{
     margin-bottom:10px;
     margin-left:40px;
+    cursor:pointer;
 }
 .view-button[type=submit]{
     float: none;
@@ -161,4 +163,19 @@ input{
 textarea{
     height:150px;
     width:300px;
+}
+.codesnippet{
+    padding:20px;
+    background-color: #F2F2F2;
+    border: solid #F2F2F9 ;
+}
+.quiz-form{
+    width:70%;
+}
+.quiz-div{
+    border:solid #F2F0Ff;
+    margin-bottom:20px;
+    border-radius: 5px;
+    padding:5px;
+
 }

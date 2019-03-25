@@ -18,22 +18,79 @@
     </ul>
 </nav>
 <h1 class="center-text" >IF CONDITIONS: QUIZ 1</h1>
-    <form>   <!--will contain the six questions-->
-        <div id="q1">
+    <div class="quiz-form-container" style="display:flex;justify-content: center">
+
+    <form class="quiz-form">   <!--will contain the six questions-->
+        <div id="q1" class="quiz-div">
         1. In a Python program, a control structure:<br/>
         <input type="radio" name="1" id="1a" value="a">Directs the order of execution of the statements in the program<br/>
         <input type="radio" name="1" id="1b" value="b"> Manages the input and output of control characters<br/>
         <input type="radio" name="1" id="1c"  value="c"> Dictates what happens before the program starts and after it terminates<br/>
         <input type="radio" name="1" id="1d" value="d">Defines program-specific data structures<br/>
         </div>
-        <div id="q2">
-            2 .What signifies the end of a statement block or suite in Python?<br/>
+        <div id="q2" class="quiz-div">
+            2. What signifies the end of a statement block or suite in Python?<br/>
             <input type="radio" name="2" id="2a" value="a">}<br/>
             <input type="radio" name="2" id="2b" value="b"> A comment<br/>
             <input type="radio" name="2" id="2c" value="c"> End<br/>
             <input type="radio" name="2" id="2d" value="b">A line that is indented less than the previous line<br/>
         </div>
+        <div id="q3" class="quiz-div">
+            3. What is the output of the following code snippet:<br/>
+            <div class="codesnippet" style="margin:5px">
+                <pre><span class="k">if</span> <span class="s1">'bar'</span> <span class="ow">in</span> <span class="p">{</span><span class="s1">'foo'</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">'bar'</span><span></span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">'baz'</span><span class="p">:</span> <span class="mi">3</span><span class="p">}:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="s1">'a'</span> <span class="ow">in</span> <span class="s1">'qux'</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre>
+            </div>
+            <input type="radio" name="2" id="3a" value="a"> 4<br/>
+            <div style="display:flex;flex-direction: row"><input type="radio" name="3" id="3b" value="b" style=""> <p style="display:inline-block ;background-color: #F2F2F9;padding-top: 0;margin-top:0">1 <br/>2<br/>3<br/>4<br/></p></div>
+            <div style="display:flex;flex-direction: row"><input type="radio" name="3" id="3c" value="b" style=""> <p style="display:inline-block ;background-color: #F2F2F9;padding-top: 0;margin-top:0">1 <br/>2<br/>4<br/></p></div>
+            <input type="radio" name="2" id="3d" value="d">It doesn’t generate any output.<br/>
+        </div>
+        <div id="q4" class="quiz-div">
+            4. What is value of this expression:<br/>
+            <p class="codesnippet">'a' + 'x' if '123'.isdigit() else 'y' + 'b'</p>
+            <input type="radio" name="4" id="4a" value="a">'ab'<br/>
+            <input type="radio" name="4" id="4b" value="b"> 'ax'<br/>
+            <input type="radio" name="4" id="4c" value="c"> 'axb'<br/>
+            <input type="radio" name="4" id="4d" value="b">'axyb'<br/>
+        </div>
+        <div id="q5" class="quiz-div">
+            5. How many choices are possible when using a single if-else statement?<br/>
 
-    </form>
+            <input type="radio" name="4" id="5a" value="a"> 1<br/>
+            <input type="radio" name="4" id="5b" value="b"> 2<br/>
+            <input type="radio" name="4" id="5c" value="c"> 4<br/>
+            <input type="radio" name="4" id="5d" value="b"> 5<br/>
+        </div>
+        <div id="q6" class="quiz-div">
+            6. A sequence of statements indented after a colon(:) in python is called a:<br/>
+
+            <input type="radio" name="4" id="6a" value="a"> Brick<br/>
+            <input type="radio" name="4" id="6b" value="b"> Brock<br/>
+            <input type="radio" name="4" id="6c" value="c"> Block<br/>
+            <input type="radio" name="4" id="6d" value="b"> Black<br/>
+        </div>
+        <div style="display:flex; width:100%;justify-content: center">
+        <button type="submit" class="view-button " style="width:200px">Submit Answers</button><br/></div>
+        <div> <!--contains links to articles that can be read -->
+            <p>Need to polish up on python's if conditions?</p>
+            <h4>Review</h4>  <!--Is a h4 as it is a potentially major section-->
+            <ul>
+                <li><a href="https://realpython.com/python-conditional-statements/#python-its-all-about-the-indentation"> Python: It’s All About the Indentation</a></li>
+                <li><a href="https://www.w3schools.com/python/python_conditions.asp">Python conditions</a></li>
+            </ul>
+        </div>
+    </form></div>
+    <!--Footer -->
+<div id="footer"><!--footer section--will be the same in all the pages-->
+    <span id="float">&copy Revisity 2019 </span> <span class="right-align"><a style="color:white" href="#top-nav" id="back">Back to top</a></span>
+</div>
+
+  <script src="main.js"></script>
 </body>
 </html>
