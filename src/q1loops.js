@@ -28,13 +28,16 @@ function createExplanationNode(explanationArray,explanationIndex,answerDiv,corre
 
 //variables
 
-let q1LoopsButtons=document.getElementsByClassName("loopsq1quiz1-sub");  //list of all of the buttons
+let q1LoopsButtons=document.getElementsByClassName("loopsquiz1-sub");  //list of all of the buttons
 let q1LoopsButtonsStates=[false,false,false,false,false,false]; //checking whethr the buttons have been clicked or not
-let q1LoopscorrectValues=['b'];  //list of all the correct values
+let q1LoopscorrectValues=['b',"b","c","b","d","a"];  //list of all the correct values
 let q1LoopsAnswerDiv=document.getElementsByClassName("quiz-div");//al the divs that we will have to append the explanations to
 let q1LoopsExplanation=["A while loop implements indefinite iteration, where the number of times the loop will be executed is not specified explicitly in advance. (Indeterminate would probably be an apt description of this type of iteration as well, but not the term that is typically used.) <br/>Definite iteration is implemented with the for loop in Python (which is covered in the next tutorial in the series)<br/>Discriminant isn’t even an adjective, much less a description of any type of iteration."];
-
-
+q1LoopsExplanation.push("All the three are not true about iteration apart from the correct answer");
+q1LoopsExplanation.push("IF and ELSE are used to implement iteration<br/>THEN is wrong.");
+q1LoopsExplanation.push("enhanced for loops has the signature:<br/>  for num in numbers.");
+q1LoopsExplanation.push("A while loop has an extra line where the loop variable is being increment.<br/>The loop variable is incremented in the for loop signaature");
+q1LoopsExplanation.push("When you don't know in advance");
 
 
 //adding the onclick of each button

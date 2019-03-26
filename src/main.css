@@ -202,3 +202,13 @@ textarea{
     text-align: center;
 
 }
+.loopsquiz1-sub{
+
+    padding:0px;
+    float:none;
+}
+.flex-column-center{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
