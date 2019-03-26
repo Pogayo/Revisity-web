@@ -184,3 +184,21 @@ textarea{
 .wrongAnswer{
   background-color:rgba(153, 18, 52, 0.14);
 }
+.congratulate{  /*styling congratulations box*/
+     font-weight:bold;
+     font-size:20px;
+     color:green;
+     border:solid rgba(153, 18, 52, 0.14);
+     border-radius: 5px;
+     text-align: center;
+
+ }
+.uncongratulate{  /*styling congratulations box*/
+    font-weight:bold;
+    font-size:20px;
+    color:indianred;
+    border:solid rgba(18, 136, 18, 0.14);
+    border-radius: 5px;
+    text-align: center;
+
+}

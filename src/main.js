@@ -19,7 +19,7 @@ function q1FormHandler () {
     var qDiv=document.getElementById(questnum);
     var correctPrefix="Correct Answer: ";
     var correctNode=document.createElement("p");
-     if(mark(questions[i],i)){
+     if(mark(questions[i],i,correctAnswers)){
       qDiv.classList.add("correctAnswer");
 
      }
@@ -63,8 +63,8 @@ function getCheckedRadio(radioGroup){
  }
 }
 //function to mark the answers return boolean, whether the question is correct or not
-function mark(radioGroup,radioGroupIndex){
-   if (getCheckedRadio(radioGroup)==correctAnswers[radioGroupIndex]){
+function mark(radioGroup,correctIndex,correctArray){
+   if (getCheckedRadio(radioGroup)==correct[correctIndex]){
        score=score+1;
        return true;
    }
@@ -72,7 +72,8 @@ function mark(radioGroup,radioGroupIndex){
 }
 
 //codes specific for quiz1 loops
-let correctAnswersQ1Loops=["b"]
+let correctAnswersQ1Loops=["b"];
+let q1=document.getElementsByName("1Loops-quiz1");
 let explanationsQ1Loops=["A while loop implements indefinite iteration, where the number of times the loop will be executed is not specified explicitly in advance. (Indeterminate would probably be an apt description of this type of iteration as well, but not the term that is typically used.)\n" +
 "\n" +
 "Definite iteration is implemented with the for loop in Python (which is covered in the next tutorial in the series).\n" +
@@ -81,3 +82,25 @@ let explanationsQ1Loops=["A while loop implements indefinite iteration, where th
 "\n" +
 "All right, that was easy. We’re just getting warmed up …"]
 
+var submitq1=document.getElementById("Loopsq1quiz1-sub");
+//setting its eventListener
+
+function handleSubmitquiz() {
+    var qDiv=document.getElementById("q1");
+   if( mark(q1,0,correctAnswersQ1Loops)){
+       qDiv.classList.add("correctAnswer");
+
+   }
+   else{
+       qDiv.classList.add("wrongAnswer");
+   }
+    var correctNode=document.createElement('p');
+    correctNode.innerHTML="Correct answer is"+correctAnswersQ1Loops[i]+" (Label the answers a,b c,d inorder of their appearance)"+explanationsQ1Loops[0];
+    qDiv.appendChild(correctNode);
+
+}
+
+submitq1.addEventListener("submit",($event)=>{
+    $event.preventDefault();
+    handleSubmitquiz();
+});
