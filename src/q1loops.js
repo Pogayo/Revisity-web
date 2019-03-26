@@ -61,7 +61,7 @@ let q1LoopsExplanation=["A while loop implements indefinite iteration, where the
          createExplanationNode( q1LoopsExplanation,index,q1LoopsAnswerDiv[index],q1LoopscorrectValues[index]);//adding the explanation
 
          q1LoopsButtonsStates[index]=true;
-     }
+     }else{alert("You already attempted this quiz. Reload to restart");}
 
  }
  function addCongratulations(){  //returning a congratulatory  message
