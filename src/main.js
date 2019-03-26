@@ -62,7 +62,7 @@ function getCheckedRadio(radioGroup){
   }
  }
 }
-//function to mark the answers return boolean, whther the question is correct or not
+//function to mark the answers return boolean, whether the question is correct or not
 function mark(radioGroup,radioGroupIndex){
    if (getCheckedRadio(radioGroup)==correctAnswers[radioGroupIndex]){
        score=score+1;
@@ -70,4 +70,14 @@ function mark(radioGroup,radioGroupIndex){
    }
 
 }
+
+//codes specific for quiz1 loops
+let correctAnswersQ1Loops=["b"]
+let explanationsQ1Loops=["A while loop implements indefinite iteration, where the number of times the loop will be executed is not specified explicitly in advance. (Indeterminate would probably be an apt description of this type of iteration as well, but not the term that is typically used.)\n" +
+"\n" +
+"Definite iteration is implemented with the for loop in Python (which is covered in the next tutorial in the series).\n" +
+"\n" +
+"Discriminant isn’t even an adjective, much less a description of any type of iteration.\n" +
+"\n" +
+"All right, that was easy. We’re just getting warmed up …"]
 
