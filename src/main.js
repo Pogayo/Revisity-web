@@ -179,7 +179,7 @@ function q1FormHandlerStrings(){
      progressDiv.appendChild(scoreParagraph);}
 
      document.getElementById("progress-container").style.display="none";
-  
+     window.scrollTo(0, 0);
   
 }
 function markStrings(userAnswer, index,answerDiv){
