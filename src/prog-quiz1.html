@@ -26,7 +26,7 @@
   </div>
     <div class="quiz-form-container" style="display:flex;justify-content: center">
 
-    <form class="quiz-form" id="q1Form">   <!--will contain the six questions-->
+    <div class="quiz-form" id="q1Form">   <!--will contain the six questions-->
         <div id="q1" class="quiz-div">
         1. In a Python program, a control structure:<br/>
         <input type="radio" name="1" id="1a" value="a" required> Directs the order of execution of the statements in the program<br/>
@@ -82,7 +82,7 @@
             <input type="radio" name="6" id="6d" value="b"> Black<br/>
         </div>
         <div style="display:flex; width:100%;justify-content: center">
-        <button id="q1submitbut" type="submit" class="view-button " style="width:200px">Submit Answers</button><br/></div>
+        <button id="q1submitbut"  class="view-button" onclick="fnc()" style="width:200px">Submit Answers</button><br/></div>
         <div> <!--contains links to articles that can be read -->
             <p>Need to polish up on python's if conditions?</p>
             <h4>Review</h4>  <!--Is a h4 as it is a potentially major section-->
@@ -91,7 +91,7 @@
                 <li><a href="https://www.w3schools.com/python/python_conditions.asp">Python conditions</a></li>
             </ul>
         </div>
-    </form></div>
+    </div></div>
     <!--Footer -->
 <div id="footer"><!--footer section--will be the same in all the pages-->
     <span id="float">&copy Revisity 2019 </span> <span class="right-align"><a style="color:white" href="#top-nav" id="back">Back to top</a></span>

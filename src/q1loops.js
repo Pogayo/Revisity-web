@@ -10,7 +10,6 @@ function getCheckedRadio(radioGroup){
 
 //function to mark the answers return boolean, whether the question is correct or not
 function mark(radioGroup,correctIndex,correctArray){
-    console.log("I have reached here");
     return getCheckedRadio(radioGroup) == correctArray[correctIndex];
 
 
@@ -41,11 +40,11 @@ q1LoopsExplanation.push("When you don't know in advance");
 
 
 //adding the onclick of each button
- for(let i=0;i<q1LoopsButtons.length;i++){
-     q1LoopsButtons[i].addEventListener("click",()=>{
-         handleQ1Buttons(i);
-     });
- }
+//  for(let i=0;i<q1LoopsButtons.length;i++){
+//      q1LoopsButtons[i].addEventListener("click",()=>{
+//          handleQ1Buttons(i);
+//      });
+//  }
 
  function handleQ1Buttons(index){
      if(!(q1LoopsButtonsStates[index])){ //if the button has not been clicked; proceed

@@ -25,7 +25,7 @@
     </div></div>
     <div class="quiz-form-container" style="display:flex;justify-content: center">
 
-        <form class="quiz-form" id="q1FormStrings">   <!--will contain the six questions-->
+        <div class="quiz-form" id="q1FormStrings">   <!--will contain the six questions-->
             <div id="q1s" class="quiz-div">
                 1. What function is used to get the length of a string in python?<br/>
                 Answer: <input type="text" name="1s" id="1s" placeholder="Enter your answer here" required> 
@@ -41,7 +41,7 @@
                 <div class="codesnippet" style="margin:5px">
                     print(ord('foo'))
                 </div>
-                 <select type="text" name="q3Strings" style="height:30px;width:200px;">
+                 <select type="text" id="q3Select" name="q3Strings" style="height:30px;width:200px;">
                      <option name="q3Strings" value="a">324</option>
                      <option name="q3Strings" value="b">102</option>
                      <option name="q3Strings" value="c">It raises an exception</option>
@@ -81,7 +81,7 @@
                 <input type="checkbox" name="6" id="6d" value="b"> Tech Beamers<br/>
             </div>
             <div style="display:flex; width:100%;justify-content: center">
-                <button id="q1submitbutStrings" type="submit" class="view-button " style="width:200px">Submit Answers</button><br/></div>
+                <button id="q1submitbutStrings" onclick="quiz3()" class="view-button " style="width:200px">Submit Answers</button><br/></div>
             <div> <!--contains links to articles that can be read -->
                 <p>Need to polish up on python's strings?</p>
                 <h4>Review</h4>  <!--Is a h4 as it is a potentially major section-->
@@ -90,7 +90,7 @@
                     <li><a href="https://www.programiz.com/python-programming/string">Python Strings with examples</a></li>
                 </ul>
             </div>
-        </form></div>
+        </div></div>
     <!--Footer -->
     <div id="footer"><!--footer section--will be the same in all the pages-->
         <span id="float">&copy Revisity 2019 </span> <span class="right-align"><a style="color:white" href="#top-nav" id="back">Back to top</a></span>
