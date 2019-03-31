@@ -74,3 +74,26 @@ function mark1(radioGroup,correctIndex,correctArray){
 //quiz 3
 var explanationsStrings=["<p>It raises an exception</p>The ord() function returns the integer value for a given character. But you can only specify a single character (a string of length 1):"];
 var correcStrings=["c"];
+
+const q1FormStrings = document.getElementById("q1FormStrings");
+let formSubmitCountStrings=0;  //will help to check if somebody is resubmiting.
+q1FormStrings.addEventListener("submit", ($event)=>{
+ $event.preventDefault();
+ if(formSubmitCountStrings==1){
+  let action=confirm("You have already submitted the form. Do you want to reset? ")
+  if(action){
+   window.location.reload()
+  }
+ }
+ formSubmitCountStrings=1;
+ q1FormHandlerStrings();
+});
+
+function q1FormHandlerStrings(){
+
+
+
+   
+}
+
+

@@ -25,30 +25,30 @@
     </div></div>
     <div class="quiz-form-container" style="display:flex;justify-content: center">
 
-        <form class="quiz-form" id="q1Form">   <!--will contain the six questions-->
-            <div id="q1" class="quiz-div">
+        <form class="quiz-form" id="q1FormStrings">   <!--will contain the six questions-->
+            <div id="q1s" class="quiz-div">
                 1. What function is used to get the length of a string in python?<br/>
-                <input type="text" name="1" id="1a" placeholder="Enter your answer here" required> 
+                Answer: <input type="text" name="1s" id="1s" placeholder="Enter your answer here" required> 
             </div>
-            <div id="q2" class="quiz-div">
+            <div id="q2s" class="quiz-div">
                 2. What is the index of the letter "a" in the following word:<br/>
                 <p class=codesnippet>name</p>
-                <input type="number" name="2" id="2a" min="0" max="10" required> 
+                Answer: <input type="number" name="2s" id="2s" min="0" max="10" placeholder="20" required> 
                 
             </div>
-            <div id="q3" class="quiz-div">
+            <div id="q3s" class="quiz-div">
                 3.What is the result of this statement?<br/>
                 <div class="codesnippet" style="margin:5px">
                     print(ord('foo'))
                 </div>
                  <select type="text" name="q3Strings" style="height:30px;width:200px;">
-                     <option name="3" value="a">324</option>
-                     <option name="3" value="b">102</option>
-                     <option name="3" value="c">It raises an exception</option>
-                     <option name="3" value="d">102 111 111</option>
+                     <option name="q3Strings" value="a">324</option>
+                     <option name="q3Strings" value="b">102</option>
+                     <option name="q3Strings" value="c">It raises an exception</option>
+                     <option name="q3Strings" value="d">102 111 111</option>
                  </select>
             </div>
-            <div id="q4" class="quiz-div">
+            <div id="q4s" class="quiz-div">
                 4. Which of the following is the output of the below Python code?<br/>
                 <p class="codesnippet">str='Tech Beamers'<br/>
                     str[4]='-'<br/>
@@ -59,7 +59,7 @@
                 <input type="checkbox" name="4" id="4c" value="c"> Tech-Beamers<br/>
                 <input type="checkbox" name="4" id="4d" value="b"> TypeError<br/>
             </div>
-            <div id="q5" class="quiz-div">
+            <div id="q5s" class="quiz-div">
                 5. What is the output when following code will be executed?<br/>
                 <P class="codesnippet">
                     str='Recurssion'<br/>print  (str.rfind('s'))
@@ -70,7 +70,7 @@
                 <input type="checkbox" name="5" id="5c" value="c"> 4<br/>
                 <input type="checkbox" name="5" id="5d" value="b"> 5<br/>
             </div>
-            <div id="q6" class="quiz-div">
+            <div id="q6s" class="quiz-div">
                 6. What is the output when following statement is executed? <br/>
                 <p class="codesnippet">print ('Tech'  'Beamers')
                 </p>
@@ -81,13 +81,13 @@
                 <input type="checkbox" name="6" id="6d" value="b"> Tech Beamers<br/>
             </div>
             <div style="display:flex; width:100%;justify-content: center">
-                <button id="q1submitbut" type="submit" class="view-button " style="width:200px">Submit Answers</button><br/></div>
+                <button id="q1submitbutStrings" type="submit" class="view-button " style="width:200px">Submit Answers</button><br/></div>
             <div> <!--contains links to articles that can be read -->
                 <p>Need to polish up on python's strings?</p>
                 <h4>Review</h4>  <!--Is a h4 as it is a potentially major section-->
                 <ul>
-                    <li><a href="https://realpython.com/python-conditional-statements/#python-its-all-about-the-indentation"> Python: It’s All About the Indentation</a></li>
-                    <li><a href="https://www.w3schools.com/python/python_conditions.asp">Python conditions</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/python-strings/"> Geeks for Geeks Python: String</a></li>
+                    <li><a href="https://www.programiz.com/python-programming/string">Python Strings with examples</a></li>
                 </ul>
             </div>
         </form></div>
