@@ -71,3 +71,6 @@ function mark1(radioGroup,correctIndex,correctArray){
 
 }
 
+//quiz 3
+var explanationsStrings=["<p>It raises an exception</p>The ord() function returns the integer value for a given character. But you can only specify a single character (a string of length 1):"];
+var correcStrings=["c"];
