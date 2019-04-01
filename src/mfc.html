@@ -17,7 +17,55 @@
         <li><a href="discrete.html" id="last">Discrete Mathematics</a></li>
     </ul>
 </nav>
-<h1 class="center-text">Coming soon</h1>
+<div id="top-section"> <!--top section-contains an image and the top text-->
+    <img id="top-img" src="../images/code-back.jpg" title="Coding in python" alt="Coding in python">
+    <p>PROGRAMMING IN PYTHON</p>
+</div>
+<h1 class="center-text" >Overview</h1>
+<div id="overview-container">
+    <div class="overview-content">
+        <h2>About the course</h2>
+        <p>This course is about learning the fundamentals of programming using Python. By the end of the course you will be able to create visual programs which can solve moderately complex problems. Over the course of the term, we will build games, visualizations, and animations. </p>
+    </div>
+    <div class="overview-content">
+        <h2>Key Learning Outcomes</h2>
+        <ul><li>On Using a professional IDE</li>
+            <li>Version Control using Git</li>
+            <li>Learning how to learn a programming language</li>
+            <li>Fundamental programming concepts</li></ul>
+    </div>
+</div>
+<div style="display:grid;grid-template-columns: 1fr 1fr; grid-gap:20px"> <!--div that contains the links to the questions and the contact form-->
+    <div style="display: flex ;justify-content: center;background-color: #F2F2F9">
+        <table> <!--table to contain all the topics and their associated quiz links-->
+            <tr id="table-heading"> <th>Topic</th> <th>Quizzes</th> </tr>
+            <tr > <td>If conditions</td> <td><a class="quiz-link" href="prog-quiz1.html">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
+            <tr> <td>Loops</td> <td><a class="quiz-link" href="prog-quiz1-loops.html" >Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
+            <tr> <td>Strings</td> <td><a  href="strings.html" class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
+            <tr> <td>Functions</td> <td><a class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
+            <tr> <td>Recursion</td> <td><a class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
+        </table></div>
+    <div style="width:100%; background-color: #F2F2F9">
+        <h1 class="center-text">Got any questions?</h1>
+        <p style="margin-left:40px">If you have any questions, please contact the facilitator by filling in the form below. </p>
+        <form style="display:flex;justify-content:center;width:100%">
+            <div style="text-align: left">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name" name="name"><br/>
+                <label>Email address</label>
+                <input type="text" placeholder="Enter your email address" name="email"><br/>
+                <label>Cohort</label>
+                <input type="number" placeholder="1" name="cohort" min="1" max="5"><br/>
+                <p>What is your query about?</p>
+                <textarea placeholder="Your message" name="name" ></textarea><br/>
+                <button type="submit" class="view-button" >Submit</button><br/>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="footer"><!--footer section--will be the same in all the pages-->
+    <span id="float">&copy Revisity 2019 </span> <span class="right-align"><a style="color:white" href="#top-nav" id="back">Back to top</a></span>
+</div>
 
 </body>
 </html>
