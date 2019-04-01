@@ -212,3 +212,6 @@ textarea{
     align-items: center;
     flex-direction: column;
 }
+.dark-red{
+    color:#8B0814;
+}

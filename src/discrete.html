@@ -21,34 +21,35 @@
     <img id="top-img" src="../images/dis.jpg" title="discrete math" alt="Coding in python">
     <p>DISCRETE MATHEMATICS</p>
 </div>
-<h1 class="center-text" >Overview</h1>
+<h1 class="center-text" style="color:#53e890" >Overview</h1>
 <div id="overview-container">
     <div class="overview-content">
         <h2>About the course</h2>
-        <p>This course is about learning the fundamentals of programming using Python. By the end of the course you will be able to create visual programs which can solve moderately complex problems. Over the course of the term, we will build games, visualizations, and animations. </p>
+        <p>Discrete Mathematics is a branch of mathematics involving discrete elements that uses algebra and arithmetic. It is increasingly being applied in the practical fields of mathematics and computer science. It is a very good tool for improving reasoning and problem-solving capabilities. This tutorial explains the fundamental concepts of Sets, Relations and Functions, Mathematical Logic, Group theory, Counting Theory, Probability, Mathematical Induction and Recurrence Relations, Graph Theory, Trees and Boolean Algebra. </p>
     </div>
     <div class="overview-content">
         <h2>Key Learning Outcomes</h2>
-        <ul><li>On Using a professional IDE</li>
-            <li>Version Control using Git</li>
-            <li>Learning how to learn a programming language</li>
-            <li>Fundamental programming concepts</li></ul>
+        <ul><li>Graph and graph theory</li>
+            <li>Counting</li>
+            <li>Recurssion</li>
+            <li>Logic</li></ul>
     </div>
 </div>
 <div style="display:grid;grid-template-columns: 1fr 1fr; grid-gap:20px"> <!--div that contains the links to the questions and the contact form-->
     <div style="display: flex ;justify-content: center;background-color: #F2F2F9">
         <table> <!--table to contain all the topics and their associated quiz links-->
-            <tr id="table-heading"> <th>Topic</th> <th>Quizzes</th> </tr>
-            <tr > <td>If conditions</td> <td><a class="quiz-link" href="prog-quiz1.html">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
-            <tr> <td>Loops</td> <td><a class="quiz-link" href="prog-quiz1-loops.html" >Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
-            <tr> <td>Strings</td> <td><a  href="strings.html" class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
-            <tr> <td>Functions</td> <td><a class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
+            <tr id="table-heading" style="color:#53e890"> <th>Topic</th> <th>Quizzes</th> </tr>
+            <tr > <td>Logic</td> <td><a class="quiz-link" href="">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
+            <tr> <td>Counting</td> <td><a class="quiz-link" href="" >Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
+            <tr> <td>Graph and graph theory</td> <td><a  href="" class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
+            <tr> <td>Propositions</td> <td><a class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
             <tr> <td>Recursion</td> <td><a class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
         </table></div>
     <div style="width:100%; background-color: #F2F2F9">
-        <h1 class="center-text">Got any questions?</h1>
+        <div id="message"></div>
+        <h1 class="center-text" style="color:#53e890">Got any questions?</h1>
         <p style="margin-left:40px">If you have any questions, please contact the facilitator by filling in the form below. </p>
-        <form style="display:flex;justify-content:center;width:100%">
+        <form style="display:flex;justify-content:center;width:100%" id="contact-form">
             <div style="text-align: left">
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name" name="name"><br/>
@@ -66,6 +67,6 @@
 <div id="footer"><!--footer section--will be the same in all the pages-->
     <span id="float">&copy Revisity 2019 </span> <span class="right-align"><a style="color:white" href="#top-nav" id="back">Back to top</a></span>
 </div>
-
+<script src="main.js"></script>
 </body>
 </html>

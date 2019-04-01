@@ -224,3 +224,24 @@ function createExplanationNode(explanationArray,explanationIndex,answerDiv,corre
    answerDiv.appendChild(answer);
    answerDiv.appendChild(eParagraph);
 }
+
+//script for the question..on submit
+let contactForm=document.getElementById("contact-form");
+  console.log(contactForm)
+console.log("I have reached here 0")
+function contactFormHandler() {
+    console.log("I have reached here 2")
+   let  messageDiv=document.getElementById("message");
+    if(messageDiv.childElementCount==0){
+        messageDiv.innerHTML="Thank you for your inquiry<br/>You  will be contacted within three working days.";
+        messageDiv.style.padding="20px";
+        messageDiv.classList.add("correctAnswer","center-text")
+    }
+}
+
+contactForm.addEventListener("submit",($event)=>{
+    console.log("I have reached here 1")
+      $event.preventDefault();
+      contactFormHandler();
+    contactForm.reset();
+  });
