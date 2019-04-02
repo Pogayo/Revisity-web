@@ -116,6 +116,14 @@ body{
     margin-bottom: 10px;
     float:right;
 }
+.nav-button {
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: #CF9812;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
 h1{
     color:#CF9812;
 }
@@ -214,4 +222,10 @@ textarea{
 }
 .dark-red{
     color:#8B0814;
+}
+.flex-row-center{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+
 }

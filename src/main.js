@@ -62,7 +62,7 @@ function fnc(){
 //function to mark the answers return boolean, whether the question is correct or not
 function mark1(radioGroup,correctIndex,correctArray){
    if (getCheckedRadio(radioGroup)==correctAnswers[correctIndex]){
-       score=score+1;
+
        return true;
    }
 
@@ -226,10 +226,13 @@ function createExplanationNode(explanationArray,explanationIndex,answerDiv,corre
 }
 
 //script for the question..on submit
-let contactForm=document.getElementById("contact-form");
+/*let contactForm=document.getElementById("contact-form");
   console.log(contactForm)
-console.log("I have reached here 0")
-function contactFormHandler() {
+console.log("I have reached here 0")*/
+function contactFormHandler($event) {
+    let contactForm=document.getElementById("contact-form")
+    $event.preventDefault();
+    contactForm.reset();
     console.log("I have reached here 2")
    let  messageDiv=document.getElementById("message");
     if(messageDiv.childElementCount==0){
@@ -239,9 +242,9 @@ function contactFormHandler() {
     }
 }
 
-contactForm.addEventListener("submit",($event)=>{
+/*contactForm.addEventListener("submit",($event)=>{
     console.log("I have reached here 1")
       $event.preventDefault();
       contactFormHandler();
     contactForm.reset();
-  });
+  });*/
