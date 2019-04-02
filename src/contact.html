@@ -22,9 +22,37 @@
                 <a href="discrete.html">Discrete Mathematics</a>
             </div></li>
         <li><a href="" id="last">Contact</a></li>
+        <li><a>Log In</a></li>
     </ul>
 </nav>
+<div class="flex-column-center">
+    <h1 class="center-text">Contact Us!</h1>
+    <p style="width:65%;padding: 40px">
+        Feedback is at the heart of everything that we do here at Revisity. Be it bugs on our website, course content or just anything that you want to let us know about, feel free to reach out to us about it.
+    </p>
+    <div style="width:60%; background-color: #F2F2F9">
+        <div id="message"></div>
+        <h1 class="center-text">What are you thinking?</h1>
+        <p style="margin-left:40px;text-align: center">Let us know what you are thinking with regards to our services. </p>
+        <form style="display:flex;justify-content:center;width:100%" id="contact-form" onsubmit="contactFormHandler()">
 
-
+            <div style="text-align: left">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name" name="name"><br/>
+                <label>Email address</label>
+                <input type="text" placeholder="Enter your email address" name="email"><br/>
+                <label>Cohort</label>
+                <input type="number" placeholder="1" name="cohort" min="1" max="5"><br/>
+                <p>What is your query about?</p>
+                <textarea placeholder="Your message" name="name" ></textarea><br/>
+                <button type="submit" class="view-button" >Submit</button><br/>
+            </div>
+        </form>
+    </div>
+   </div>
+<div id="footer"><!--footer section--will be the same in all the pages-->
+    <span id="float">&copy Revisity 2019 </span> <span class="right-align"><a style="color:white" href="#top-nav" id="back">Back to top</a></span>
+</div>
+<script src="main.js"></script>
 </body>
 </html>

@@ -11,10 +11,18 @@
     <ul id="header-nav-list">
         <li id="rev">Revisity</li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="programming.html">Programming 1</a></li>
-        <li><a href="databases.html">Databases</a></li>
-        <li><a href="mfc.html">MFC</a></li>
-        <li><a href="discrete.html" id="last">Discrete Mathematics</a></li>
+        <li class="dropdown">
+            <button class="dropbtn">Courses
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="programming.html">Programming</a>
+                <a href="databases.html">Databases</a>
+                <a href="mfc.html">MFC</a>
+                <a href="discrete.html">Discrete Mathematics</a>
+            </div></li>
+        <li><a href="" id="last">Contact</a></li>
+        <li><a>Log In</a></li>
     </ul>
 </nav>
 <div id="top-section"> <!--top section-contains an image and the top text-->
@@ -49,7 +57,7 @@
         <div id="message"></div>
         <h1 class="center-text" style="color:#53e890">Got any questions?</h1>
         <p style="margin-left:40px">If you have any questions, please contact the facilitator by filling in the form below. </p>
-        <form style="display:flex;justify-content:center;width:100%" id="contact-form">
+        <form style="display:flex;justify-content:center;width:100%" id="contact-form" >
             <div style="text-align: left">
                 <label>Name</label>
                 <input type="text" placeholder="Enter your name" name="name"><br/>
