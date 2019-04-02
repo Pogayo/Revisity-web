@@ -40,12 +40,14 @@ body{
     color:white;
     font-size: 18px;
 }
-#header-nav-list>li>a:active{
+
+/*#header-nav-list>li>a:visited{
+    color:#CF9812;
+
+    #header-nav-list>li>a:active{
     color:#CF9812;
 }
-#header-nav-list>li>a:visited{
-    color:#CF9812;
-}
+}*/
 #header-nav-list>li{  /*formating the list*/
     display: inline;
     padding-right: 20px;
@@ -63,9 +65,8 @@ body{
 }
 #top-section p{
     position: absolute;
-    left:2%;
     top: 25%;
-    width: 100%;
+    padding:20px;
     font-size: 24px;
     color:white;
     font-weight:bold;
@@ -270,4 +271,23 @@ textarea{
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.top-paragraph{
+    text-align: center;
+    background-color: #CF9812;
+    width:40% ;
+    /*left:25%;*/
+    border-radius: 5px;
+}
+.contactLinks{
+    width:100%;
+    background-color: #F2F2F9;
+    border-radius: 5px;
+}
+.contactLinksDiv{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    margin-left:20px;
+    margin-right:20px;
 }

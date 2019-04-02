@@ -12,8 +12,7 @@
         <li id="rev">Revisity</li>
         <li><a href="index.html">Home</a></li>
         <li class="dropdown">
-            <button class="dropbtn">Courses
-                <i class="fa fa-caret-down"></i>
+            <button class="dropbtn" style="color:#CF9812">Courses
             </button>
             <div class="dropdown-content">
                 <a href="programming.html">Programming</a>
@@ -27,7 +26,7 @@
 </nav>
     <div id="top-section"> <!--top section-contains an image and the top text-->
         <img id="top-img" src="../images/code-back.jpg" title="Coding in python" alt="Coding in python">
-        <p>PROGRAMMING IN PYTHON</p>
+        <p style="background-color: #CF9812;left:25%" class="top-paragraph">PROGRAMMING IN PYTHON</p>
     </div>
     <h1 class="center-text" >Overview</h1>
    <div id="overview-container">
@@ -43,8 +42,8 @@
                <li>Fundamental programming concepts</li></ul>
        </div>
    </div>
-    <div style="display:grid;grid-template-columns: 1fr 1fr; grid-gap:20px"> <!--div that contains the links to the questions and the contact form-->
-    <div style="display: flex ;justify-content: center;background-color: #F2F2F9">
+    <div class="contactLinksDiv"> <!--div that contains the links to the questions and the contact form-->
+    <div  class="contactLinks flex-row-center">
     <table> <!--table to contain all the topics and their associated quiz links-->
         <tr id="table-heading"> <th>Topic</th> <th>Quizzes</th> </tr>
         <tr > <td>If conditions</td> <td><a class="quiz-link" href="prog-quiz1.html">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
@@ -53,7 +52,7 @@
         <tr> <td>Functions</td> <td><a class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
         <tr> <td>Recursion</td> <td><a class="quiz-link">Quiz 1</a>, <a class="quiz-link">Quiz 2</a></td> </tr>
     </table></div>
-   <div style="width:100%; background-color: #F2F2F9">
+   <div class="contactLinks">
        <div id="message"></div>
        <h1 class="center-text">Got any questions?</h1>
        <p style="margin-left:40px">If you have any questions, please contact the facilitator by filling in the form below. </p>
